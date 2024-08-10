@@ -1,1 +1,1 @@
-# Aptechka
+# vite-client-library-template
