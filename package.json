@@ -1,0 +1,49 @@
+{
+  "name": "library_name",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denisavitski/library_name.git"
+  },
+  "homepage": "https://github.com/denisavitski/library_name#readme",
+  "bugs": {
+    "url": "https://github.com/denisavitski/library_name/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "ISC",
+  "files": [
+    "lib"
+  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./lib/index.cjs",
+      "default": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "lib/index.d.ts"
+      ]
+    }
+  },
+  "scripts": {
+    "preview": "vite preview",
+    "build": "tsc && vite build --mode lib",
+    "build:site": "tsc && vite build --mode site",
+    "dev": "vite --host --mode site"
+  },
+  "devDependencies": {
+    "@types/node": "^22.2.0",
+    "tsx": "^4.17.0",
+    "vite": "5.4.0",
+    "vite-plugin-dts": "^4.0.2",
+    "vite-plugin-htmc": "^0.1.14"
+  },
+  "dependencies": {},
+  "peerDependencies": {}
+}

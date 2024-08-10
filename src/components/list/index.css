@@ -1,0 +1,4 @@
+.package-list {
+  display: grid;
+  gap: 2vmin;
+}

@@ -1,0 +1,1 @@
+export { MyPackage } from './MyPackage'
